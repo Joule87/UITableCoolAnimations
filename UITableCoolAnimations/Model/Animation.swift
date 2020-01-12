@@ -9,10 +9,12 @@
 import Foundation
 
 enum Animations: Int, CaseIterable {
-    case Fade,BounceUp,FadeUp,SlideIn,ScaleOut
+    case ScaleOut, Fade, BounceUp, FadeUp, SlideIn
     
     var description: String {
         switch self {
+        case .ScaleOut:
+            return "Scale Out"
         case .Fade:
             return "Fade"
         case .BounceUp:
@@ -21,8 +23,7 @@ enum Animations: Int, CaseIterable {
             return "Fade Up"
         case .SlideIn:
             return "Slide In"
-        case .ScaleOut:
-            return "Scale Out"
+            
         }
     }
     
