@@ -13,6 +13,13 @@
 		F481053D23CA4EAA00863577 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F481053B23CA4EAA00863577 /* Main.storyboard */; };
 		F481053F23CA4EAB00863577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F481053E23CA4EAB00863577 /* Assets.xcassets */; };
 		F481054223CA4EAB00863577 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F481054023CA4EAB00863577 /* LaunchScreen.storyboard */; };
+		F481054A23CA4FFD00863577 /* AnimationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481054923CA4FFD00863577 /* AnimationsView.swift */; };
+		F481054D23CA589B00863577 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481054C23CA589B00863577 /* Animation.swift */; };
+		F481054F23CA67E500863577 /* AnimationsViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481054E23CA67E500863577 /* AnimationsViewDelegate.swift */; };
+		F481055323CAA1CE00863577 /* UIColor_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481055223CAA1CE00863577 /* UIColor_Extension.swift */; };
+		F4ED195323CB4ABB007BF809 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED195223CB4ABB007BF809 /* Animator.swift */; };
+		F4ED195523CB4AEA007BF809 /* AnimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED195423CB4AEA007BF809 /* AnimationFactory.swift */; };
+		F4ED195723CB5BFD007BF809 /* UITableView_Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED195623CB5BFD007BF809 /* UITableView_Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		F481053E23CA4EAB00863577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F481054123CA4EAB00863577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F481054323CA4EAB00863577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F481054923CA4FFD00863577 /* AnimationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsView.swift; sourceTree = "<group>"; };
+		F481054C23CA589B00863577 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		F481054E23CA67E500863577 /* AnimationsViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsViewDelegate.swift; sourceTree = "<group>"; };
+		F481055223CAA1CE00863577 /* UIColor_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Extension.swift; sourceTree = "<group>"; };
+		F4ED195223CB4ABB007BF809 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		F4ED195423CB4AEA007BF809 /* AnimationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationFactory.swift; sourceTree = "<group>"; };
+		F4ED195623CB5BFD007BF809 /* UITableView_Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView_Ext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,86 @@
 		F481053423CA4EAA00863577 /* UITableCoolAnimations */ = {
 			isa = PBXGroup;
 			children = (
-				F481053523CA4EAA00863577 /* AppDelegate.swift */,
-				F481053723CA4EAA00863577 /* SceneDelegate.swift */,
-				F481053923CA4EAA00863577 /* ViewController.swift */,
-				F481053B23CA4EAA00863577 /* Main.storyboard */,
-				F481053E23CA4EAB00863577 /* Assets.xcassets */,
-				F481054023CA4EAB00863577 /* LaunchScreen.storyboard */,
-				F481054323CA4EAB00863577 /* Info.plist */,
+				F4ED195B23CB95D9007BF809 /* Assets */,
+				F4ED195A23CB95CF007BF809 /* Common */,
+				F4ED195923CB95C6007BF809 /* Controller */,
+				F4ED195823CB95C1007BF809 /* View */,
+				F481054B23CA585600863577 /* Model */,
 			);
 			path = UITableCoolAnimations;
+			sourceTree = "<group>";
+		};
+		F481054B23CA585600863577 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F481054C23CA589B00863577 /* Animation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F4ED195823CB95C1007BF809 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F481054923CA4FFD00863577 /* AnimationsView.swift */,
+				F481053B23CA4EAA00863577 /* Main.storyboard */,
+				F481054023CA4EAB00863577 /* LaunchScreen.storyboard */,
+				F481053923CA4EAA00863577 /* ViewController.swift */,
+				F4ED195F23CB9625007BF809 /* Protocols */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4ED195923CB95C6007BF809 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F4ED195423CB4AEA007BF809 /* AnimationFactory.swift */,
+				F4ED195223CB4ABB007BF809 /* Animator.swift */,
+				F481053523CA4EAA00863577 /* AppDelegate.swift */,
+				F481053723CA4EAA00863577 /* SceneDelegate.swift */,
+				F4ED195E23CB9618007BF809 /* Protocols */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F4ED195A23CB95CF007BF809 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F4ED195C23CB95FB007BF809 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F4ED195B23CB95D9007BF809 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F481053E23CA4EAB00863577 /* Assets.xcassets */,
+				F481054323CA4EAB00863577 /* Info.plist */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		F4ED195C23CB95FB007BF809 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F481055223CAA1CE00863577 /* UIColor_Extension.swift */,
+				F4ED195623CB5BFD007BF809 /* UITableView_Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F4ED195E23CB9618007BF809 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F4ED195F23CB9625007BF809 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F481054E23CA67E500863577 /* AnimationsViewDelegate.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +225,14 @@
 			files = (
 				F481053A23CA4EAA00863577 /* ViewController.swift in Sources */,
 				F481053623CA4EAA00863577 /* AppDelegate.swift in Sources */,
+				F481055323CAA1CE00863577 /* UIColor_Extension.swift in Sources */,
+				F481054F23CA67E500863577 /* AnimationsViewDelegate.swift in Sources */,
+				F4ED195323CB4ABB007BF809 /* Animator.swift in Sources */,
+				F481054A23CA4FFD00863577 /* AnimationsView.swift in Sources */,
+				F481054D23CA589B00863577 /* Animation.swift in Sources */,
+				F4ED195723CB5BFD007BF809 /* UITableView_Ext.swift in Sources */,
 				F481053823CA4EAA00863577 /* SceneDelegate.swift in Sources */,
+				F4ED195523CB4AEA007BF809 /* AnimationFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +378,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SN83FZJ9R5;
-				INFOPLIST_FILE = UITableCoolAnimations/Info.plist;
+				INFOPLIST_FILE = UITableCoolAnimations/Assets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcollado.UITableCoolAnimations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +397,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SN83FZJ9R5;
-				INFOPLIST_FILE = UITableCoolAnimations/Info.plist;
+				INFOPLIST_FILE = UITableCoolAnimations/Assets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +406,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcollado.UITableCoolAnimations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
