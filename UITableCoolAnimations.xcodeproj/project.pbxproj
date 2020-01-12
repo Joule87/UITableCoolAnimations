@@ -17,6 +17,7 @@
 		F481054D23CA589B00863577 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481054C23CA589B00863577 /* Animation.swift */; };
 		F481054F23CA67E500863577 /* AnimationsViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481054E23CA67E500863577 /* AnimationsViewDelegate.swift */; };
 		F481055323CAA1CE00863577 /* UIColor_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481055223CAA1CE00863577 /* UIColor_Extension.swift */; };
+		F4AFFF4C23CBB14700CA2D78 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AFFF4B23CBB14700CA2D78 /* CustomCollectionViewCell.swift */; };
 		F4ED195323CB4ABB007BF809 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED195223CB4ABB007BF809 /* Animator.swift */; };
 		F4ED195523CB4AEA007BF809 /* AnimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED195423CB4AEA007BF809 /* AnimationFactory.swift */; };
 		F4ED195723CB5BFD007BF809 /* UITableView_Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED195623CB5BFD007BF809 /* UITableView_Ext.swift */; };
@@ -35,6 +36,7 @@
 		F481054C23CA589B00863577 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		F481054E23CA67E500863577 /* AnimationsViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsViewDelegate.swift; sourceTree = "<group>"; };
 		F481055223CAA1CE00863577 /* UIColor_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Extension.swift; sourceTree = "<group>"; };
+		F4AFFF4B23CBB14700CA2D78 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		F4ED195223CB4ABB007BF809 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		F4ED195423CB4AEA007BF809 /* AnimationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationFactory.swift; sourceTree = "<group>"; };
 		F4ED195623CB5BFD007BF809 /* UITableView_Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView_Ext.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				F481054023CA4EAB00863577 /* LaunchScreen.storyboard */,
 				F481053923CA4EAA00863577 /* ViewController.swift */,
 				F4ED195F23CB9625007BF809 /* Protocols */,
+				F4AFFF4B23CBB14700CA2D78 /* CustomCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				F4ED195723CB5BFD007BF809 /* UITableView_Ext.swift in Sources */,
 				F481053823CA4EAA00863577 /* SceneDelegate.swift in Sources */,
 				F4ED195523CB4AEA007BF809 /* AnimationFactory.swift in Sources */,
+				F4AFFF4C23CBB14700CA2D78 /* CustomCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

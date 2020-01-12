@@ -53,7 +53,7 @@ class AnimationsView: UIView {
     func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: CustomCollectionViewCell.reuseIdentifier)
         
         addSubview(collectionView)
         [collectionView.topAnchor.constraint(equalTo: animationLabel.bottomAnchor, constant: 8),
@@ -77,15 +77,13 @@ extension AnimationsView: UICollectionViewDelegateFlowLayout, UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
-        let title = UILabel(frame: CGRect(x: 0, y: 0, width: cell.bounds.size.width, height: 50))
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CustomCollectionViewCell.reuseIdentifier, for: indexPath) as! CustomCollectionViewCell
         
+        let title = UILabel(frame: CGRect(x: 0, y: 0, width: cell.bounds.size.width, height: 50))
         title.text = Animations(rawValue: indexPath.row)?.description
         title.font = UIFont(name: "AvenirNext-Bold", size: 15)
         title.textAlignment = .center
         
-        cell.backgroundColor = .lightGray
-        cell.layer.cornerRadius = 10
         cell.contentView.addSubview(title)
         
         return cell

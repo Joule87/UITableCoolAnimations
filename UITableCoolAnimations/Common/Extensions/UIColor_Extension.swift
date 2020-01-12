@@ -10,6 +10,8 @@ import UIKit
 
 extension UIColor {
     
+    static let airGray = rbg(r: 245, g: 246, b: 250)
+    
     static func getRandomColor() -> UIColor {
         let red = CGFloat.random(in: 0...255)
         let green = CGFloat.random(in: 0...255)
